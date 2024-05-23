@@ -1,8 +1,7 @@
 'use client';
 
-import Image from 'next/image';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
+
 import { Mail } from 'lucide-react'; // Assuming you have an icon for messages
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import Autoplay from 'embla-carousel-autoplay';
@@ -61,6 +60,11 @@ export default function Home() {
       {/* Footer */}
       <footer className="text-center p-4 md:p-6 bg-gray-900 text-white">
         © 2023 True Feedback. All rights reserved.
+        <strong  className='text-black font-bold bg-red-500 px-3 py-3 ml-2'>
+          <Link href={'/dis'}>
+          terms and conditions
+          </Link>
+        </strong>
       </footer>
     </>
   );
